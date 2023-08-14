@@ -1,6 +1,7 @@
 package com.hainiu1;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -15,6 +16,10 @@ public class DemoTest {
         String niko = demo1.say("Niko");
         System.out.println(niko);
         Assert.assertEquals("This is Niko", niko);
+    }
 
+    @Before
+    public void before(){
+        System.out.println("Before operation!");
     }
 }
