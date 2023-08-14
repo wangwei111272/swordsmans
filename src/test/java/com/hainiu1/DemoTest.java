@@ -1,5 +1,6 @@
 package com.hainiu1;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,5 +22,9 @@ public class DemoTest {
     @Before
     public void before(){
         System.out.println("Before operation!");
+    }
+    @After
+    public void after(){
+        System.out.println("After operation!");
     }
 }
